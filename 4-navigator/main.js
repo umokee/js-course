@@ -3,7 +3,9 @@ const addressLong = 0;
 const positionLat = 100;
 const positionLong = 50;
 
-const dist =
-  ((addressLat - positionLat) ** 2 + (addressLong - positionLong) ** 2) / 2;
+const distLat = (addressLat - positionLat) ** 2;
+const distLong = (addressLong - positionLong) ** 2;
+
+const dist = (distLat + distLong) ** (1 / 2);
 
 console.log(dist);
