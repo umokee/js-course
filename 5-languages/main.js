@@ -4,7 +4,7 @@ switch (language) {
   case "en":
     console.log("Good day!");
     break;
-  case "en":
+  case "ru":
     console.log("Добрый день!");
     break;
   case "de":
