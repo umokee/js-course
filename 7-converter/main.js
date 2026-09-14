@@ -1,8 +1,14 @@
 function converter(sum, srcCur, outCur) {
   switch (outCur) {
-    case "руб" && srcCur !== "руб":
+    case "руб":
+      if (srcCur !== "руб") {
+        return sum;
+      }
       return sum / 80;
-    case "$" && srcCur !== "$":
+    case "$":
+      if (srcCur !== "$") {
+        return sum;
+      }
       return sum * 80;
     default:
       return null;
