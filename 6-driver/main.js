@@ -2,10 +2,8 @@ const hasLicence = true;
 const age = 20;
 const isDrunk = false;
 
-const canDrive = age >= 18 && hasLicence && !isDrunk;
-
 console.log(
-  `Пользователь ${canDrive ? "может" : "не может"} водить транспорт`,
+  `Пользователь ${age >= 18 && hasLicence && !isDrunk ? "может" : "не может"} водить транспорт`,
 );
 
 /*
