@@ -4,18 +4,18 @@ function converter(sum, srcCur, outCur) {
       if (srcCur === "руб") {
         return sum;
       }
-      return sum / 80;
+      return sum * 80;
     case "$":
       if (srcCur === "$") {
         return sum;
       }
-      return sum * 80;
+      return sum / 80;
     default:
       return null;
   }
 }
 
-converter(1000, "руб", "$");
+console.log(converter(1000, "руб", "$"));
 
 /*
 Написать функцию, которая получает на вход 3 параметра:
