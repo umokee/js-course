@@ -4,7 +4,7 @@ const isDrunk = false;
 
 const canDrive = age >= 18 && hasLicence && !isDrunk;
 
-console.timeLog(
+console.log(
   `Пользователь ${canDrive ? "может" : "не может"} водить транспорт`,
 );
 
